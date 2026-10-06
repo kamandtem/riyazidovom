@@ -18,3 +18,5 @@ git push -u origin main
 بعد در GitHub به تب **Actions** برو، workflow با نام **Build Android APK** را باز کن، روی **Run workflow** بزن و بعد از سبز شدن اجرا، فایل را از بخش **Artifacts** دانلود کن.
 
 فایل دانلودشده ZIP است؛ آن را استخراج کن تا به `app-debug.apk` برسی.
+
+اگر در مرحلهٔ `actions/setup-node@v4` پیام `Dependencies lock file is not found` دیدی، نسخهٔ فعلی workflow این مشکل را ندارد؛ چون کش npm را به lockfile وابسته نکرده است.
